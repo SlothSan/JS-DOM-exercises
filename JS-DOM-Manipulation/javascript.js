@@ -35,3 +35,22 @@ contentTwo.appendChild(h1);
 contentTwo.appendChild(p);
 container.appendChild(contentTwo);
 
+
+
+//Events
+
+const btn = document.querySelector(`#btn`);
+
+btn.addEventListener(`click`, function(e) {
+    alert("Hello World!");
+    e.target.style.background = "blue";
+});
+
+
+const buttons = document.querySelectorAll(`button`);
+
+buttons.forEach((button) => {
+    button.addEventListener(`click`, () => {
+        alert(button.id);
+    });
+});
